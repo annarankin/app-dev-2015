@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amazing App</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.4/underscore-min.js" integrity="sha512-uLKRd6hCNYAENFn2h7w0p5hrUAz21bAu/85eqSqmQ1Y565lFInwRga9Lgk+QAAR9QvNfSlZjnEb+HHfzkAC/8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.6.1.js"
-  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.1/backbone-min.js" integrity="sha512-TztyCWDNoN0YKl30gDCMKsiWs35juID+W7ZM2uvPeLLmiNvZg789SglgB/QeUbewqIF2Z4mVq3PyIEa+YXXADQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.4/underscore-min.js"
+    integrity="sha512-uLKRd6hCNYAENFn2h7w0p5hrUAz21bAu/85eqSqmQ1Y565lFInwRga9Lgk+QAAR9QvNfSlZjnEb+HHfzkAC/8Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
   <script src="/Pokemon.js"></script>
   <script src="/PokemonCollection.js"></script>
   <script src="/PokemonView.js"></script>
   <script src="/main.js"></script>
   <link rel="stylesheet" href="/main.css" />
 </head>
+
 <body>
   <div id="main-container">
     <h1>Yet another pokéapp</h1>
-    <input id="search-box" type="text"/>
+    <input id="search-box" type="text" />
     <button id="search-button">Search</button>
-  <div id="results">Nothing here</div>
+    <div id="results">Nothing here</div>
   </div>
 </body>
 <script type="text/template" id="pokemon-template">
-  <p><%= name %></p>
-  <p><%= number %></p>
+  <a href="<%= url %>"><%= name %></a>
 </script>
+
 </html>
