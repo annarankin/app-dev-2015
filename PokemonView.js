@@ -12,6 +12,7 @@ $(document).ready(function () {
   PokemenView = Backbone.View.extend({
     el: "#results",
     initialize: function () {
+      this.initialCollection = new PokemonCollection();
       this.collection = new PokemonCollection();
       this.render();
     },
